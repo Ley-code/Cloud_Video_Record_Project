@@ -3,6 +3,9 @@
         android:label="version1"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <service
+    android:name="com.example.flutter_background_video_recorder.RecorderService"
+    android:foregroundServiceType="mediaProjection|camera" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
